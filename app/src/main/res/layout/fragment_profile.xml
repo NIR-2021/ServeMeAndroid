@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    tools:context=".ProfileFragment">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:padding="0dp"
+            android:background="#fece2f"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:id="@+id/not_logged_layout"
+
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login Required"
+                    android:textSize="30sp"
+                    android:id="@+id/not_loggin"
+
+                    android:visibility="visible"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="login"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/not_loggin"
+                    android:id="@+id/profile_login"
+                    ></Button>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/profile_layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/logoName"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerVertical="false"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/finallogo" />
+
+                <TextView
+                    android:id="@+id/profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="false"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/logoName"
+                    android:includeFontPadding="false"
+                    android:text="Profile"
+                    android:textSize="30sp" />
+
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/logoName"
+                    android:includeFontPadding="false"
+                    android:text="Username"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/username"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/logoName"
+                    android:includeFontPadding="false"
+                    android:text="Name"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/logoName"
+                    android:includeFontPadding="false"
+                    android:text="Address"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/isVendor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/address"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/logoName"
+                    android:includeFontPadding="false"
+                    android:text="Registered As Vendor"
+                    android:textSize="12sp" />
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginTop="-100dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#000"
+                app:cardElevation="10dp"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_giftcard"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:id="@+id/reward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:includeFontPadding="false"
+                        android:text="500"
+                        android:textColor="@color/yellow"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/rewardpoints"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/reward"
+                        android:textColor="@color/yellow"
+
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="10dp"
+                        android:text="Reward Points"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#000000"
+                app:cardElevation="10dp"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_order" />
+
+                    <TextView
+                        android:id="@+id/order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:includeFontPadding="false"
+                        android:text="9"
+                        android:textColor="@color/yellow"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/totalorder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Orders"
+                        android:textColor="@color/yellow"
+
+                        android:textSize="14sp"
+                        android:paddingTop="10dp"
+                        android:layout_below="@+id/order"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Orders"
+                android:gravity="left"
+                android:textSize="20dp"
+                android:id="@+id/orders"
+                android:layout_marginBottom="10dp"
+                android:background="#00000000">
+            </Button>
+
+            <Button
+                android:id="@+id/favs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#00000000"
+                android:gravity="left"
+                android:hint="Favorites"
+
+                android:textSize="20dp"></Button>
+
+            <Button
+                android:id="@+id/regAsVendor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#00000000"
+                android:gravity="left"
+                android:hint="Register As Vendor"
+
+                android:textSize="20dp"></Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Logout"
+                android:textSize="20dp"
+                android:id="@+id/logout"
+                android:gravity="left"
+                android:background="#00000000">
+            </Button>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

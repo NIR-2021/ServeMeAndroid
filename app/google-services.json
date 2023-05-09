@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1054645959672",
+    "project_id": "serveme-m1",
+    "storage_bucket": "serveme-m1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054645959672:android:f0dc90221d3a4718ec740d",
+        "android_client_info": {
+          "package_name": "com.example.serveme_m1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054645959672-nmu1lkj7uc8m9posdfa11ls9hg9i7hs7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT3yqZmzWbZLBdus96mEkyD3k_8yW7Io8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054645959672-nmu1lkj7uc8m9posdfa11ls9hg9i7hs7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
